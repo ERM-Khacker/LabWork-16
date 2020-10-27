@@ -14,18 +14,18 @@ public class StringTest {
         4)  из байтов
         5)  С помощью StringBuilder*/
         String str1 = "I`m Java Developer";
-        System.out.println(str1);
+        out.println(str1);
         String str2 = new String("I developer on Java");
-        System.out.println(str2);
+        out.println(str2);
         char[] str3 = {'J', 'a', 'v', 'a'};
-        System.out.println(str3);
+        out.println(str3);
         String str4 = "Java is doing me better";
         String str5 = new String(str4.getBytes());
-        System.out.println(str5);
+        out.println(str5);
         StringBuilder built = new StringBuilder("I love Java");
         String str6 = new String(built);
-        System.out.println(str6);
-        System.out.println();
+        out.println(str6);
+        out.println();
 
         /*3. Работа с строкой.
         1)  Создать строку “Апельсин,Яблоко,Гранат,Груша”.
@@ -41,8 +41,8 @@ public class StringTest {
             String longWord;
             if (fruit[i].length() > 6) {
                 longWord = fruit[i];
-                System.out.println(longWord.toLowerCase());
-                System.out.println(longWord.substring(0, 3));
+                out.println(longWord.toLowerCase());
+                out.println(longWord.substring(0, 3));
             }
         }
 
@@ -51,9 +51,9 @@ public class StringTest {
         7)  Преобразовать строку: заменить все символы ‘_’ на пробелы.
         8)  Вывести окончательный вариант на экран.*/
         String str7 = new String("  I am_a new_string   ");
-        System.out.println(str7.trim());
-        System.out.println(str7.replace("_", " ").trim());
-        System.out.println();
+        out.println(str7.trim());
+        out.println(str7.replace("_", " ").trim());
+        out.println();
 
         /*9)  Создать Scanner для ввода текста. Выводим на экран сообщение с текстом: «Вы
         ввели: <ваш текст>»
